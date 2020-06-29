@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACOA,OAAO,CAAC,+HAAI,CCPZ,AAAA,UAAU,AAAA,CACN,KAAK,CAAE,KAAK,CACf,ACFD,AAAA,MAAM,AAAA,CACF,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,QAAQ,CAAE,KAAK,CACf,OAAO,CAAE,EAAE,CACX,gBAAgB,CAAO,kBAAO,CACjC",
+    "sources": [
+        "ASSETS/STYLES/style.scss",
+        "ASSETS/STYLES/_fonts.scss",
+        "ASSETS/STYLES/_interface.scss",
+        "ASSETS/STYLES/BLOCKS/_header.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
