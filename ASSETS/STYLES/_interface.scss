@@ -10,7 +10,11 @@ $ANIMATION_CONTAINER: 1s linear width;
     width: 973px;
     margin: auto;
     transition: $ANIMATION_CONTAINER;
+    position: relative;
     //border: 1px dotted black;
+}
+.light-blue-letter{
+    color: $blue;
 }
 @media (max-width: $MAX-4-TB){
     .container{

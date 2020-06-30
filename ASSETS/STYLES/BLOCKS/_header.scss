@@ -14,17 +14,11 @@ header{
             height: 50px;
             line-height: 50px;
             margin-left: 10px;
-            .header__logo{
-                
-            }
             .logo{
                 font-size: 21px;
                 color: #fff;
                 font-family: "Lato";
                 font-weight: 700;
-                .logo__last-letter{
-                    color: $blue;
-                }
             }
             .header__tag-line{
                 padding-left: 17px;
