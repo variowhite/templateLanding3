@@ -1,3 +1,26 @@
+//colors
+$blue: #4c76ff;
+
+//media
+$MAX-4-TB: 1023px;
+$MAX-4-MB: 767px;
+$ANIMATION_CONTAINER: 1s linear width;
+
 .container{
     width: 973px;
+    margin: auto;
+    transition: $ANIMATION_CONTAINER;
+    //border: 1px dotted black;
+}
+@media (max-width: $MAX-4-TB){
+    .container{
+        width: $MAX-4-MB;
+        transition: $ANIMATION_CONTAINER;
+    }
+}
+@media (max-width: $MAX-4-MB){
+    .container{
+        width: 100%;
+        transition: $ANIMATION_CONTAINER;
+    }
 }
