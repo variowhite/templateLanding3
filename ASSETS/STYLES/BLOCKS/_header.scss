@@ -1,7 +1,94 @@
+$animation__nav-menu__item: 0.4s linear;
+
 header{
     height: 50px;
     width: 100%;
     position: fixed;
     z-index: 10;
     background-color: rgba(#393a44, 0.2);
+
+    .container{
+        overflow: hidden;
+        .header__left-title{
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            margin-left: 10px;
+            .header__logo{
+                
+            }
+            .logo{
+                font-size: 21px;
+                color: #fff;
+                font-family: "Lato";
+                font-weight: 700;
+                .logo__last-letter{
+                    color: $blue;
+                }
+            }
+            .header__tag-line{
+                padding-left: 17px;
+                margin-left: 39px;
+            }
+            .tag-line{
+                font-family: "Lato";
+                font-weight: 100;
+                font-style: italic;
+                border-left: 1px solid #32b0ee;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+        .header__nav-menu{
+            float: right;
+            margin-right: 10px;
+        }
+        .nav-menu{
+            .nav-menu__item{
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                height: 50px;
+                border-top: 1px solid transparent;
+                line-height: 50px;
+                margin-right: 33px;
+                font-family: "Lato";
+                font-weight: 100;
+                color: #fff;
+                transition: $animation__nav-menu__item;
+                cursor: pointer;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover{
+                    border-top-color: $blue;
+                    transition: $animation__nav-menu__item;
+                }
+            }
+            .nav-menu__item_active{
+                border-top-color: $blue;
+                transition: 0s all;
+            }
+        }
+    }
+}
+@media (max-width: 640px){
+    header{
+        .container{
+            .header__left-title{
+                display: block;
+            }
+            .header__nav-menu{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                width: 100%;
+                margin: 0;
+                background-color: rgba(#393a44, 0.2);
+                .nav-menu__item{
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
