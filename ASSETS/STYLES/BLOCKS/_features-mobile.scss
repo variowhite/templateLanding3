@@ -1,0 +1,94 @@
+#features-mobile{
+    font-family: "Open Sans";
+    color: #282528;
+    .container{
+        #features-mobile__first-message{
+            font-size: 15px;
+            text-align: center;
+        }
+        #features-mobile-grid{
+            display: grid;
+            grid-template-columns: auto 263px auto;
+            column-gap: 45px;
+            margin-top: 70px;
+
+            #features-mobile-grid_mobile{
+                width: 263px;
+                height: 552px;
+                background-image: url("ASSETS/IMG/FEATURES-MOBILE/Iphone.png");
+                grid-column: 2/3;
+                grid-row: 1/4;
+            }
+            .features-mobile-grid__item{
+                display: table-cell;
+                vertical-align: middle;
+                .features-mobile-grid__align{
+                    padding: 10px;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: grid;
+                    grid-template-columns: 30px auto;
+                    column-gap: 40px;
+                    &:hover{
+                        background-color: #fefce9;
+                    }
+                }
+                #featires-mobile-grid__img_settings{background-image: url("ASSETS/IMG/FEATURES-MOBILE/GRID-ICONS/settings.png");}
+                #featires-mobile-grid__img_account{background-image: url("ASSETS/IMG/FEATURES-MOBILE/GRID-ICONS/account.png");}
+                #featires-mobile-grid__img_timer{background-image: url("ASSETS/IMG/FEATURES-MOBILE/GRID-ICONS/time.png");}
+                #featires-mobile-grid__img_message{background-image: url("ASSETS/IMG/FEATURES-MOBILE/GRID-ICONS/message.png");}
+                #featires-mobile-grid__img_music{background-image: url("ASSETS/IMG/FEATURES-MOBILE/GRID-ICONS/music.png");}
+                #featires-mobile-grid__img_camera{background-image: url("ASSETS/IMG/FEATURES-MOBILE/GRID-ICONS/camera.png");}
+                
+                .features-mobile-grid__img{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 30px;
+                    height: 31px;
+                    display: inline-block;
+                }
+                .features-mobile-grid__text{
+                    display: inline-block;
+                    .features-grid__text-main{
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+                    .features-grid__text-message{
+                        font-weight: 400;
+                        font-size: 11px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-4-MB){
+    #features-mobile{
+        font-family: "Open Sans";
+        color: #282528;
+        .container{
+            #features-mobile__first-message{
+                font-size: 15px;
+                text-align: center;
+            }
+            #features-mobile-grid{
+                display: grid;
+                grid-template-columns: 1fr;
+                column-gap: 45px;
+    
+                #features-mobile-grid_mobile{
+                    width: 100%;
+                    height: 200px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
