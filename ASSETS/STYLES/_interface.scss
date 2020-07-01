@@ -33,7 +33,9 @@ $ANIMATION_CONTAINER: 1s linear width;
         }
     }
 }
-
+.block-gray{
+    background-color: #efefef;
+}
 
 @media (max-width: $MAX-4-TB){
     .container{
