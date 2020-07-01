@@ -1,0 +1,53 @@
+#features{
+    .container{
+        #features-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 38px;
+            .features-grid__item{
+                display: grid;
+                grid-template-columns: 34px auto;
+                column-gap: 13px;
+
+                #features-grid__img_branding{background-image: url("ASSETS/IMG/FEATURES/feather.png");}
+                #features-grid__img_development{background-image: url("ASSETS/IMG/FEATURES/pencil.png");}
+                #features-grid__img_consulting{background-image: url("ASSETS/IMG/FEATURES/megaphone.png");}
+                .features-grid__img{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 34px;
+                    height: 34px;
+                    border: 1px solid $blue;
+                    border-radius: 50%;
+                }
+                .features-grid_text{
+                    font-family: "Open Sans";   
+                    .features-grid__title{
+                        font-weight: 600;
+                        font-size: 17px;
+                        &::first-letter{
+                            text-transform: uppercase;
+                        }
+                    }
+                    .features-grid__message{
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 16px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-4-MB){
+    #features{
+        .container{
+            #features-grid{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+                padding: 0px 10px;
+            }
+        }
+    }
+}

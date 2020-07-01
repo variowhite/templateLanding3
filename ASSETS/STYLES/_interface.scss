@@ -16,6 +16,25 @@ $ANIMATION_CONTAINER: 1s linear width;
 .light-blue-letter{
     color: $blue;
 }
+.block{
+    padding: 75px 0px 55px 0px;
+    .block-title{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        margin-bottom: 80px;
+        .block-title__main{
+            font-family: "Lato";
+            font-weight: 700;
+            color: $blue;
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+    }
+}
+
+
 @media (max-width: $MAX-4-TB){
     .container{
         width: $MAX-4-MB;
