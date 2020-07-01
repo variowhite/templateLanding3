@@ -30,6 +30,14 @@ $ANIMATION_CONTAINER: 1s linear width;
             color: $blue;
             text-transform: uppercase;
             font-size: 28px;
+            text-align: center;
+        }
+        .block-title_heart{
+            width: 229px;
+            height: 14px;
+            background-image: url("ASSETS/IMG/COMMON/BLOCK-TITLE/heart.png");
+            margin: 25px auto 0px auto;
+            
         }
     }
 }
