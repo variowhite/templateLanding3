@@ -6,38 +6,44 @@ $MAX-4-TB: 1023px;
 $MAX-4-MB: 767px;
 $ANIMATION_CONTAINER: 1s linear width;
 
-.container{
-    width: 973px;
-    margin: auto;
-    transition: $ANIMATION_CONTAINER;
-    position: relative;
-    //border: 1px dotted black;
-}
+
 .light-blue-letter{
     color: $blue;
 }
 .block{
     padding: 75px 0px 55px 0px;
-    .block-title{
+    .container{
+        width: 973px;
+        margin: auto;
+        transition: $ANIMATION_CONTAINER;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        display: inline-block;
-        margin-bottom: 80px;
-        .block-title__main{
-            font-family: "Lato";
-            font-weight: 700;
-            color: $blue;
-            text-transform: uppercase;
-            font-size: 28px;
-            text-align: center;
+        //border: 1px dotted black;
+        .block-title{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            margin-bottom: 80px;
+            .block-title__main{
+                font-family: "Lato";
+                font-weight: 700;
+                color: $blue;
+                text-transform: uppercase;
+                font-size: 28px;
+                text-align: center;
+            }
+            .block-title_heart{
+                width: 229px;
+                height: 14px;
+                background-image: url("ASSETS/IMG/COMMON/BLOCK-TITLE/heart.png");
+                margin: 25px auto 0px auto;
+            }
         }
-        .block-title_heart{
-            width: 229px;
-            height: 14px;
-            background-image: url("ASSETS/IMG/COMMON/BLOCK-TITLE/heart.png");
-            margin: 25px auto 0px auto;
-            
+        .block__sub-message{
+            font-size: 15px;
+            text-align: center;
+            font-family: "Open Sans";
+            color: #282528;
         }
     }
 }
@@ -46,14 +52,18 @@ $ANIMATION_CONTAINER: 1s linear width;
 }
 
 @media (max-width: $MAX-4-TB){
-    .container{
-        width: $MAX-4-MB;
-        transition: $ANIMATION_CONTAINER;
+    .block{
+        .container{
+            width: $MAX-4-MB;
+            transition: $ANIMATION_CONTAINER;
+        }
     }
 }
 @media (max-width: $MAX-4-MB){
-    .container{
-        width: 100%;
-        transition: $ANIMATION_CONTAINER;
+    .block{
+        .container{
+            width: 100%;
+            transition: $ANIMATION_CONTAINER;
+        }
     }
 }
