@@ -18,33 +18,34 @@ $ANIMATION_CONTAINER: 1s linear width;
         transition: $ANIMATION_CONTAINER;
         position: relative;
         //border: 1px dotted black;
-        .block-title{
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            display: inline-block;
-            margin-bottom: 80px;
-            .block-title__main{
-                font-family: "Lato";
-                font-weight: 700;
-                color: $blue;
-                text-transform: uppercase;
-                font-size: 28px;
-                text-align: center;
-            }
-            .block-title_heart{
-                width: 229px;
-                height: 14px;
-                background-image: url("ASSETS/IMG/COMMON/BLOCK-TITLE/heart.png");
-                margin: 25px auto 0px auto;
-            }
-        }
-        .block__sub-message{
-            font-size: 15px;
+    }
+    .block-title{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        margin-bottom: 80px;
+        .block-title__main{
+            font-family: "Lato";
+            font-weight: 700;
+            color: $blue;
+            text-transform: uppercase;
+            font-size: 28px;
             text-align: center;
-            font-family: "Open Sans";
-            color: #282528;
         }
+        .block-title_heart{
+            width: 229px;
+            height: 14px;
+            background-image: url("ASSETS/IMG/COMMON/BLOCK-TITLE/heart.png");
+            margin: 25px auto 0px auto;
+        }
+    }
+    .block__sub-message{
+        font-size: 15px;
+        text-align: center;
+        font-family: "Open Sans";
+        color: #282528;
+        margin-bottom: 70px;
     }
 }
 .block-gray{
