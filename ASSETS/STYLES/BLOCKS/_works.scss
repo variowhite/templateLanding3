@@ -26,12 +26,19 @@
                 color: #fff;
             }
         }
+        .image-selector__item_selected{
+            background-color: $blue;
+            color: #fff;
+        }
     }
     #works-grid{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 250px;
         margin-top: 70px;
+        .work_hidden{
+            display: none;
+        }
         #works_1{background-image: url("ASSETS/IMG/WORKS/work1.jpg")}
         #works_2{background-image: url("ASSETS/IMG/WORKS/work2.jpg")}
         #works_3{background-image: url("ASSETS/IMG/WORKS/work3.jpg")}
