@@ -1,0 +1,113 @@
+#discuss{
+    .container{
+        #discuss-grid{
+            font-family: "Open Sans";
+            font-weight: 400;
+            form{
+                display: grid;
+                grid-template-columns: 1fr 3fr 30px;
+
+                #discuss-grid__item_submit{
+                    grid-column: 2/3;
+                }
+                #discuss-grid__item_form{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                .discuss-grid__item{
+
+                    #discuss-grid__addres-main{
+                        line-height: 26px;
+                        font-size: 19px;
+                    }
+                    #discuss-grid__addres-sub{
+                        line-height: 20px;
+                        font-size: 11px;
+                        margin: 35px 90px 0px 0px;
+                        color: #6a737b;
+                    }
+                    #discuss-grid__say-hello{
+                        font-size: 20px;
+                        font-weight: 700;
+                        grid-column: 1/3;
+                    }
+                    #input-frame_message{
+                        grid-column: 1/3;
+                    }
+                    .input-frame{
+                        padding: 0px 15px 0px 0px;
+                        .input-frame__lable{
+                            color: #9ea3a8;
+                            font-size: 11px;
+
+                        }
+                        input{
+                            width: 100%;
+                            border: 1px transparent;
+                            border-bottom: 1px solid #b7babe;
+                            color: #9ea3a8;
+                        }
+                    }
+                    
+                    #discuss-grid__social_behance{
+                        background-image: url("ASSETS/IMG/DISCUSS/social/behance.png");
+                        &:hover{background-image: url("ASSETS/IMG/DISCUSS/social/behance_h.png");}
+                    }
+                    #discuss-grid__social_twitter{
+                        background-image: url("ASSETS/IMG/DISCUSS/social/twitter.png");
+                        &:hover{background-image: url("ASSETS/IMG/DISCUSS/social/twitter_h.png");}
+                    }
+                    #discuss-grid__social_forest{
+                        background-image: url("ASSETS/IMG/DISCUSS/social/forrst.png");
+                        &:hover{background-image: url("ASSETS/IMG/DISCUSS/social/forrst_h.png");}
+                    }
+                    #discuss-grid__social_dribble{
+                        background-image: url("ASSETS/IMG/DISCUSS/social/dribbble.png");
+                        &:hover{background-image: url("ASSETS/IMG/DISCUSS/social/dribbble_h.png");}
+                    }
+                    #discuss-grid__social_google{
+                        background-image: url("ASSETS/IMG/DISCUSS/social/google plus.png");
+                        &:hover{background-image: url("ASSETS/IMG/DISCUSS/social/google plus_h.png");}
+                    }
+                    .discuss-grid__social-item{
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        width: 25px;
+                        height: 25px;
+                        margin-bottom: 16px;
+                        &:last-child(){
+                            margin-bottom: 0px;
+                        }
+                    }
+                    #discuss__sublit-frame{
+                        overflow: hidden;
+                        height: 25px;
+                        #discuss__sublit-ico{
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-image: url("ASSETS/IMG/DISCUSS/Envelope.png");
+                            width: 20px;
+                            height: 25px;
+                            float: right;
+                            position: relative;
+                            margin-right: 10px;
+                            
+                        }
+                        input{
+                            float: right;
+                            color: #000;
+                            background-color: transparent;
+                            border: 0px;
+                            height: 25px; 
+                            font-size: 14px;
+                            margin-right: 15px;
+                            &:hover{
+                                color: rgb(116, 116, 116);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
