@@ -36,6 +36,7 @@
                     }
                     .input-frame{
                         padding: 0px 15px 0px 0px;
+                        margin: 0px 2px;
                         .input-frame__lable{
                             color: #9ea3a8;
                             font-size: 11px;
@@ -45,6 +46,7 @@
                             width: 100%;
                             border: 1px transparent;
                             border-bottom: 1px solid #b7babe;
+                            border-radius: 0px;
                             color: #9ea3a8;
                         }
                     }
@@ -105,6 +107,29 @@
                                 color: rgb(116, 116, 116);
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-4-MB){
+    #discuss{
+        .container{
+            #discuss-grid{
+                padding: 0px 10px;
+                form{
+                    grid-template-columns: 1fr 30px;
+                    row-gap: 30px;
+                    #discuss-grid__item_addres{
+                        grid-column: 1/3;
+                        text-align: center;
+                        #discuss-grid__addres-sub{
+                            margin: 20px 0px 0px 0px;
+                        }
+                    }
+                    #discuss-grid__item_submit{
+                        grid-column: 1/3;
                     }
                 }
             }
