@@ -1,0 +1,88 @@
+#team{
+    .container{
+        #team-grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            font-family: "Open Sans";
+            text-align: center;
+            column-gap: 26px;
+            .team-grid__item{
+                &:hover {
+                    .team-grid__photo-frame{
+                        .team-grid__hover{
+                            display: block;
+                        }
+                    }
+                    .team-grid__name{
+                        color: #0eb493;
+                    }
+
+                }
+                #team__profile_1{background-image: url("ASSETS/IMG/TEAM/profile1.jpg");}
+                #team__profile_2{background-image: url("ASSETS/IMG/TEAM/profile2.jpg");}
+                #team__profile_3{background-image: url("ASSETS/IMG/TEAM/profile3.jpg");}
+                #team__profile_4{background-image: url("ASSETS/IMG/TEAM/profile4.jpg");}
+                .team-grid__photo-frame{
+                    height: 246px;
+                    background-size: cover;
+                    .team-grid__hover{
+                        display: none;
+                        background-color: rgba($blue, 0.9);
+                        height: 100%;
+                        position: relative;
+                        .team-grid__message{
+                            color: #fff;
+                            margin: 0px 20px;
+                            line-height: 20px;
+                            .team-grid__message-title{
+                                font-weight: 700;
+                            }
+                            .team-grid__message-sub{
+                                font-weight: 400;
+                                font-size: 13px;
+                                margin-top: 13px;
+                            }
+                        }
+                        .team-grid__social-grid{
+                            font-size: 0px;
+                            position: absolute;
+                            bottom: 10px;
+                            left: 0px;
+                            width: 100%;
+                            .team-grid__twitter{background-image: url("ASSETS/IMG/TEAM/social/Twitter.png");}
+                            .team-grid__facebook{background-image: url("ASSETS/IMG/TEAM/social/FB.png");}
+                            .team-grid__googleplus{background-image: url("ASSETS/IMG/TEAM/social/G+.png");}
+                            .team-grid__social-item{
+                                background-color: #3653ae;
+                                width: 35px;
+                                height: 35px;
+                                display: inline-block;
+                                margin-right: 3px;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                &:hover{
+                                    filter: brightness(0.8);
+                                }
+                                &:last-child{
+                                margin-right: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .team-grid__name{
+                    color: $blue-dark;
+                    font-weight: 600;
+                    font-size: 15px;
+                    margin-top: 17px;
+                }
+                .team-grid__profession{
+                    color: $blue-dark;
+                    font-weight: 400;
+                    font-size: 11px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

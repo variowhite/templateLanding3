@@ -1,5 +1,6 @@
 //colors
 $blue: #4c76ff;
+$blue-dark: #062033;
 
 //media
 $MAX-4-TB: 1023px;
@@ -17,7 +18,7 @@ $ANIMATION_CONTAINER: 1s linear width;
         margin: auto;
         transition: $ANIMATION_CONTAINER;
         position: relative;
-        //border: 1px dotted black;
+        //border: 3px dotted green;
     }
     .block-title{
         position: relative;
