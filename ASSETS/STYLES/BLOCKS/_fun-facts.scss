@@ -1,0 +1,39 @@
+#facts{
+    background-image: url("ASSETS/IMG/FACTS/facts-bg.jpg");
+    background-size: cover;
+    .container{
+        #facts-grid{
+            color: #fff;
+            font-family: "Open Sans";
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(4, 1fr);
+            .facts-grid__item{
+                #facts-grid_hours{background-image: url("ASSETS/IMG/FACTS/Clock.png");}
+                #facts-grid_clients{background-image: url("ASSETS/IMG/FACTS/Friends.png");}
+                #facts-grid_projects{background-image: url("ASSETS/IMG/FACTS/Rocket.png");}
+                #facts-grid_awards{background-image: url("ASSETS/IMG/FACTS/Cup.png");}
+                .facts-grid__pic{
+                    border: 2px solid #6d7985;
+                    border-radius: 50%;
+                    width: 90px;
+                    height: 90px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                }
+                .facts-grid__counter{
+                    margin-top: 40px;
+                    font-weight: 600;
+                    font-size: 45px;
+                }
+                .facts-grid__description{
+                    margin-top: 15px;
+                    font-weight: 400;
+                    text-orientation: uppercase;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
