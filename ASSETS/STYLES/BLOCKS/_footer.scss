@@ -1,0 +1,95 @@
+footer{
+    background-color: #010305;
+    font-family: "Lato";
+    color: #fff;
+    font-weight: 100;
+    .footer__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        .footer__item{
+            #footer__logo{
+                font-size: 27px;
+                font-weight: 700;
+            }
+            #footer__description{
+                line-height: 23px;
+                font-size: 13px;
+                margin-top: 20px;
+            }
+            .footer__item-title{
+                font-weight: 700;
+                font-size: 18;
+                margin-bottom: 40px;
+            }
+            form{
+                display: grid;
+                grid-template-columns: auto 60px;
+                border: 3px solid #fff;
+                border-radius: 0px;
+                background-color: #010305;
+                height: 40px;
+                #footer__form-line{
+                    color: #fff;
+                    padding: 0px 15px;
+                }
+                #footer__form-button{
+                    width: 60px;
+                    background-image: url("ASSETS/IMG/FOOTER/row.png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    &:hover{
+                        filter: brightness(2);
+                        cursor: pointer;
+                    }
+                }
+                input{
+                    display: inline-block;
+                    background-color: #010305;
+                    margin: 0px;
+                    height: 100%;
+                    border: 0px;
+                }
+            }
+            #footer__subscribe-message{
+                margin-top: 20px;
+                font-size: 13px;
+            }
+            #footer__explore-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
+                .footer__explore-item{
+                    a{
+                        color: #fff;
+                        display: block;
+                        text-decoration: none;
+                        margin-bottom: 18px;
+                        &:hover{
+                            color: #ddd;
+                        }
+                        &::first-letter{
+                            text-transform: uppercase;
+                        }
+                        &:last-child(){
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $MAX-4-MB){
+    footer{
+        .container{
+            .footer__grid{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+                #footer__item_explore{
+                    display: none;
+                }
+            }
+        }
+    }
+}
