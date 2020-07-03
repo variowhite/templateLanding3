@@ -37,3 +37,13 @@
         }
     }
 }
+@media (max-width: $MAX-4-MB){
+    #facts{
+        .container{
+            #facts-grid{
+                gap: 40px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
